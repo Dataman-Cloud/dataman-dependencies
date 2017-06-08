@@ -37,13 +37,13 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>datamanSnapshotRepo</id>
+            <id>snapshots-dataman</id>
             <name>dataman snapshot Repository</name>
             <url>http://192.168.31.21:8081/nexus/content/groups/public</url>
             <layout>default</layout>
         </snapshotRepository>
         <repository>
-            <id>datamanRepo</id>
+            <id>releases-dataman</id>
             <name>dataman release Repository</name>
             <url>http://192.168.31.21:8081/nexus/content/groups/public</url>
             <layout>default</layout>
