@@ -151,58 +151,42 @@
     </dependencies>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.plugin.version}</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>${maven.resources.plugin.version}</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${maven.javadoc.plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadoc</id>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                        <configuration>
-                            <encoding>UTF-8</encoding>
-                            <aggregate>true</aggregate>
-                            <excludePackageNames>*.protobuf.*</excludePackageNames>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.compiler.plugin.version}</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven.resources.plugin.version}</version>
+                    <configuration>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven.javadoc.plugin.version}</version>
                     <executions>
                         <execution>
-                            <id>attach-sources</id>
+                            <id>attach-javadoc</id>
                             <phase>install</phase>
                             <goals>
-                                <goal>jar-no-fork</goal>
+                                <goal>jar</goal>
                             </goals>
+                            <configuration>
+                                <encoding>UTF-8</encoding>
+                                <aggregate>true</aggregate>
+                                <excludePackageNames>*.protobuf.*</excludePackageNames>
+                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
@@ -210,9 +194,6 @@
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
                     <version>${jacoco-maven-plugin.version}</version>
-                    <configuration>
-                        <outputDirectory>${project.reporting.outputDirectory}/jacoco</outputDirectory>
-                    </configuration>
                     <executions>
                         <execution>
                             <id>JaCoCo Agent</id>
