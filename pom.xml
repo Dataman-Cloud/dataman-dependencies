@@ -35,21 +35,6 @@
         <maven.javadoc.plugin.version>2.10.4</maven.javadoc.plugin.version>
     </properties>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>snapshots-dataman</id>
-            <name>dataman snapshot Repository</name>
-            <url>http://192.168.31.21:8081/nexus/content/groups/public</url>
-            <layout>default</layout>
-        </snapshotRepository>
-        <repository>
-            <id>releases-dataman</id>
-            <name>dataman release Repository</name>
-            <url>http://192.168.31.21:8081/nexus/content/groups/public</url>
-            <layout>default</layout>
-        </repository>
-    </distributionManagement>
-
     <dependencyManagement>
         <dependencies>
             <!-- common utility -->
@@ -222,4 +207,18 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <!-- Maven仓库定义 -->
+    <distributionManagement>
+        <repository>
+            <id>releases-dataman</id>
+            <name>Local Nexus Repository</name>
+            <url>http://192.168.31.21:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots-dataman</id>
+            <name>Local Nexus Repository</name>
+            <url>http://192.168.31.21:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
