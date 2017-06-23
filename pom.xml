@@ -49,6 +49,7 @@
         <assertj.version>3.6.2</assertj.version>
         <jmh.version>1.19</jmh.version>
         <system-rules.version>1.16.0</system-rules.version>
+        <cucumber.version>1.2.5</cucumber.version>
 
         <!-- maven plugin  -->
         <maven.compiler.plugin.version>3.6.1</maven.compiler.plugin.version>
@@ -215,7 +216,31 @@
                 <version>${system-rules.version}</version>
                 <scope>test</scope>
             </dependency>
-
+            <!--cucumber-->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${spring.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-spring</artifactId>
+                <version>${cucumber.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-java8</artifactId>
+                <version>${cucumber.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-junit</artifactId>
+                <version>${cucumber.version}</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
