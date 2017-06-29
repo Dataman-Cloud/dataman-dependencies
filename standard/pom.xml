@@ -7,7 +7,7 @@
         <groupId>com.dataman.dependency</groupId>
         <artifactId>dataman-dependencies</artifactId>
         <version>0.1.0-SNAPSHOT</version>
-        <relativePath>../dependencies/pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>dataman-dependencies-standard</artifactId>
     <packaging>pom</packaging>
@@ -89,6 +89,10 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
