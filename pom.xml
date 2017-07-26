@@ -59,6 +59,7 @@
         <maven.surefire.report.plugin.version>2.20</maven.surefire.report.plugin.version>
         <jacoco-maven-plugin.version>0.7.9</jacoco-maven-plugin.version>
         <cucumber.reporting>3.6.0</cucumber.reporting>
+        <jacoco-maven-plugin.version>0.7.9</jacoco-maven-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -258,6 +259,12 @@
                 <artifactId>cucumber-junit</artifactId>
                 <version>${cucumber.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jacoco</groupId>
+                <artifactId>org.jacoco.agent</artifactId>
+                <version>${jacoco-maven-plugin.version}</version>
+                <classifier>runtime</classifier>
             </dependency>
         </dependencies>
     </dependencyManagement>
