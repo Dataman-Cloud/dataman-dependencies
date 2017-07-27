@@ -325,14 +325,13 @@
                     <version>${jacoco-maven-plugin.version}</version>
                     <executions>
                         <execution>
-                            <id>JaCoCo Agent</id>
-                            <phase>test-compile</phase>
+                            <id>pre-test</id>
                             <goals>
                                 <goal>prepare-agent</goal>
                             </goals>
                         </execution>
                         <execution>
-                            <id>JaCoCo Report</id>
+                            <id>post-test</id>
                             <phase>test</phase>
                             <goals>
                                 <goal>report</goal>
