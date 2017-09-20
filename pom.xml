@@ -412,10 +412,6 @@
             <properties>
                 <profiles.active>public</profiles.active>
             </properties>
-            <activation>
-                <!-- 设置默认激活这个配置 -->
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <!-- Maven仓库定义 -->
             <distributionManagement>
                 <repository>
