@@ -6,7 +6,7 @@
 
     <groupId>com.dataman.dependency</groupId>
     <artifactId>dataman-dependencies</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>dataman dependencies</name>
@@ -33,8 +33,8 @@
         <spring.boot.version>1.5.3.RELEASE</spring.boot.version>
 
         <!-- kafka dependencies -->
-        <spring.kafka.version>1.2.2.RELEASE</spring.kafka.version>
-        <kafka.version>0.10.2.0</kafka.version>
+        <spring.kafka.version>1.3.0.RELEASE</spring.kafka.version>
+        <kafka.version>0.11.0.1</kafka.version>
 
         <!-- zookeeper dependencies -->
         <curator.version>2.10.0</curator.version>
