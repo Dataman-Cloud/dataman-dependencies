@@ -18,7 +18,7 @@
 
     <properties>
         <!-- jdk and system -->
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
 
         <!-- common utility -->
         <guava.version>19.0</guava.version>
@@ -30,7 +30,9 @@
 
         <!-- spring dependencies -->
         <spring.version>4.3.9.RELEASE</spring.version>
-        <spring.boot.version>1.5.3.RELEASE</spring.boot.version>
+        <spring-boot.version>1.5.3.RELEASE</spring-boot.version>
+        <spring-cloud.version>1.2.3.RELEASE</spring-cloud.version>
+        <spring-cloud-netflix.version>1.3.4.RELEASE</spring-cloud-netflix.version>
 
         <!-- kafka dependencies -->
         <spring.kafka.version>1.3.0.RELEASE</spring.kafka.version>
@@ -41,6 +43,11 @@
 
         <!-- json dependencies -->
         <faster-jackson.version>2.8.3</faster-jackson.version>
+
+        <!-- RPC dependencies  -->
+        <netty.version>4.1.15.Final</netty.version>
+        <netty-boringssl.version>2.0.6.Final</netty-boringssl.version>
+        <async-http-client.version>2.1.0-alpha25</async-http-client.version>
 
         <!-- test dependencies -->
         <junit.version>4.12</junit.version>
