@@ -31,7 +31,7 @@
         <!-- spring dependencies -->
         <spring.version>4.3.13.RELEASE</spring.version>
         <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
-        <spring-cloud-netflix.version>1.4.0.RELEASE</spring-cloud-netflix.version>
+        <spring-cloud-netflix.version>1.4.1.RELEASE</spring-cloud-netflix.version>
 
         <!-- kafka dependencies -->
         <spring.kafka.version>1.2.2.RELEASE</spring.kafka.version>
