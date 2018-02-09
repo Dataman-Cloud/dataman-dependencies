@@ -7,7 +7,6 @@
         <groupId>com.dataman.dependency</groupId>
         <artifactId>dataman-dependencies</artifactId>
         <version>0.2.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>dataman-dependencies-standard</artifactId>
     <packaging>pom</packaging>
